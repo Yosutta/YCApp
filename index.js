@@ -150,6 +150,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 })
 
-app.listen(8080, (req, res) => {
-    console.log('YelpCamp is listening on port 8080')
+const port = process.env.PORT || 8080
+app.listen(port, (req, res) => {
+    console.log(`YelpCamp is listening on port ${port}`)
 })
