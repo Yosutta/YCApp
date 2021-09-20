@@ -1,0 +1,24 @@
+body{
+    background: linear-gradient(rgb(0,0,0,0.6),rgb(0,0,0,0.6)),
+    url('https://images.unsplash.com/photo-1559521783-1d1599583485?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1100&q=100');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 1px;
+}
+
+.nav-link{
+    margin-left: 1rem;
+}
+
+.nav-link.active{
+    font-weight: 700;
+    border-bottom: 2px white solid
+}
+
+.nav-link:hover{
+    border-bottom: 2px white solid
+}
+
+#idBtn{
+    
+}

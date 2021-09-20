@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style/home.css">
+    <link rel="shortcut icon" href="#">
+    <title>YelpCamp</title>
+</head>
+
+<body class="">
+    <div class="text-white container d-flex flex-column text-center justify-content-between"
+        style="height:100vh; width:100%">
+        <nav class="navbar navbar-expand navbar-dark">
+            <a class="navbar-brand" href="/">YelpCamp</a>
+            <div class="navbar-nav ms-auto">
+                <a class="nav-link active" href="/">Home</a>
+                <a class="nav-link" href="/campgrounds">Campgrounds</a>
+                <% if(!signedInUser){ %>
+                    <a class="nav-link" href="/login">Login</a>
+                    <a class="nav-link" href="/register">Register</a>
+                    <% }else{ %>
+                        <a class="nav-link" href="/logout">Logout</a>
+                        <% } %>
+            </div>
+        </nav>
+        <div class="mb-5">
+            <h2 class="">YelpCamp</h2>
+            <p>Welcome to YelpCamp</p>
+            <p>We are a group of individuals who has a love for camping. <br>Feel free to dive in and look through all
+                the campgrounds and choose to stay where you would want to. </p>
+            <a href="/campgrounds"><button id="viewBtn" class="btn bg-white text-dark">View campgrounds</button></a>
+        </div>
+        <footer class="text-muted"> &copy; 2021 </footer>
+    </div>
+</body>
+
+</html>
